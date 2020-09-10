@@ -142,10 +142,10 @@ This project was designed by Zerio & Simon.
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome !<br />Feel free to check [issues page](https://github.com/Videos-Downloader/url-song-utilities/issues).
+Contributions, issues and feature requests are welcome !<br />Feel free to check [issues page](https://github.com/URL-song-utilities/url-song-utilities-module/issues).
 
 ## 📝 License
 
-Copyright © 2020 [Zerio & Simon](https://github.com/<projet>).<br />
+Copyright © 2020 [Zerio & Simon](https://github.com/URL-song-utilities).<br />
 
 Give a ⭐️ (on the Github project) if this project helped you !
