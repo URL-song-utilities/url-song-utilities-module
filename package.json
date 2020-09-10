@@ -1,0 +1,27 @@
+{
+  "name": "url-song-utilities",
+  "version": "1.0.0",
+  "description": "A module to get information on multiple music services !",
+  "main": "src/index.js",
+  "author": "Zerio & Simon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/URL-song-utilities/url-song-utilities-module/issues"
+  },
+  "homepage": "https://github.com/URL-song-utilities/url-song-utilities-module#readme",
+  "scripts": {
+    "test": "node ./test/index.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "scrape-yt": "^1.4.1",
+    "spotify-url-info": "^1.4.0",
+    "ytdl-core": "^3.2.2"
+  },
+  "keywords": [
+    "music",
+    "music-scraper",
+    "music-downloader",
+    "music-song-downloader"
+  ]
+}
