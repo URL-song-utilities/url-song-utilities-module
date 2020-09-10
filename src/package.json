@@ -1,0 +1,9 @@
+{
+  "name": "url-song-utilities",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "scrape-yt": "^1.4.1",
+    "spotify-url-info": "^1.4.0",
+    "ytdl-core": "^3.2.2"
+  }
+}
