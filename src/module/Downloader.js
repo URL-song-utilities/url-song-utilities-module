@@ -90,7 +90,7 @@ class DOWNLOADER {
      * @param {String} url An url
      * @returns {String} A string containing the source website of the link
      */
-    static sourceUrl(url) {
+    static async sourceUrl(url) {
 
         if (typeof url !== "string") throw new Error('Parameter \'url\' must be a string !');
 
