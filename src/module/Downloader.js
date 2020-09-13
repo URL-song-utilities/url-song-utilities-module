@@ -111,6 +111,7 @@ class DOWNLOADER {
             default:
                 return undefined;
                 break;
+
         }
 
     }
@@ -131,14 +132,17 @@ class DOWNLOADER {
             let res = await fetch(`https://some-random-api.ml/lyrics/?title=${encodeURIComponent(song)}`);
             res = await res.json();
 
+            //If the module does not find lyrics
             if (res.lyrics === 0 || !res.lyrics) return undefined;
 
             //Send lyrics
             return res.lyrics;
 
         } catch (e) {
+
             //If there are no arguments
             return undefined;
+
         }
 
     }
@@ -146,7 +150,7 @@ class DOWNLOADER {
     /**
      * download
      * @param {String} song Song object or youtube song url
-     * @returns {String} Lyrics of the song
+     * @returns {String} Stream YTDL
      */
     static async download(song, options) {
 
@@ -159,7 +163,6 @@ class DOWNLOADER {
         return ytdl(song, { format: format });
 
     }
-
 
 }
 
