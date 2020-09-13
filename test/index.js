@@ -1,8 +1,9 @@
+//Let's look for the player with the help of the folders
 const player = require("../src/index");
 
 //The bot will need the fs module function to save the file
 const { createWriteStream } = require("fs");
-//The bot will search for the music (on Spotify for example)
+//The bot will search for the music (on YouTube for example)
 player.searchSong('https://youtu.be/YBHQbu5rbdQ').then(async song => {
     await player.download(song.url).then(stream => {
         //The bot will download the file with the name it has found
