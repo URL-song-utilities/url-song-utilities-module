@@ -10,7 +10,7 @@
   },
   "homepage": "https://github.com/URL-song-utilities/url-song-utilities-module#readme",
   "scripts": {
-    "test": "node ./test/index.js"
+    "test": "node ./test/test.js"
   },
   "dependencies": {
     "node-fetch": "^2.6.1",
