@@ -163,6 +163,24 @@ class DOWNLOADER {
         return ytdl(song, { format: format });
 
     }
+    
+    /**
+     * toPlayableLink
+     * @param {String} song A YouTube link
+     * @returns {String} Changed URL
+     */
+    static async toPlayableLink(song) {
+
+        if (!song) throw new Error('No song provided !');
+        if (typeof song !== "string") throw new Error('Parameter \'song\' must be a string !');
+
+        try { var downloaded = await ytdl.getInfo(song, { quality: "heighest" }); } catch (e) { return undefined; }
+
+        if (!downloaded) return undefined;
+
+        return downloaded.formats[0].url;
+
+    }
 
 }
 
