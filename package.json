@@ -1,6 +1,6 @@
 {
   "name": "url-song-utilities",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A module to get information on multiple music services !",
   "main": "src/index.js",
   "author": "Zerio & Simon",
