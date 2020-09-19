@@ -24,6 +24,9 @@ Available methods :
 
 #Download a music with a YouTube url
 <module>.download('<URL>')
+
+#Changing the url of a YouTube video
+<module>.toPlayableLink('<YouTube URL>')
 ```
 
 Examples :
@@ -84,6 +87,18 @@ await player.download('https://youtu.be/nceqQyqIa5o').then(stream => {
 })
 ```
 
+- Changing the url of a YouTube video
+
+```js
+//The bot will try to transform the music
+player.toPlayableLink('https://youtu.be/ZMqhjKRUGsY').then(url => {
+    //If the module returns "undefined", it means that the module did not find the music
+    if (!url) return console.log('No music found !');
+    //If the module succeeded in generating a link
+    console.log(url);
+})
+```
+
 - Result of a search (example : TROLLZ - 6ix9ine with Nicki Minaj)
 
 ```
@@ -134,6 +149,25 @@ await player.searchSong('https://open.spotify.com/track/22LAwLoDA5b4AaGSkg6bKW')
     //If the module did not find the music it returns a error
     return console.log('No music found !');
 })
+```
+
+- Changing the url of a YouTube video (example : EJS)
+
+Why use the toPlayableLink() function ?
+This function transforms a YouTube link into a Google Drive link, which can be read in sites such as (HTML, EJS...).
+Without using this function it will be impossible to play the requested video directly with the YouTube link.
+
+```html
+<!-- const player = require('url-song-utilities'); -->
+<!-- var data = await player.searchSong('HUGEL feat. Amber Van Day - Mamma Mia (Official Video)'); -->
+<!-- var stream = await player.toPlayableLink(data.url); -->
+
+<figure>
+    <figcaption>You are currently listening to : <%= data.title %></figcaption>
+    <audio controls src="<%= stream %>">
+        Your browser does not support the <code>audio</code> element.
+    </audio>
+</figure>
 ```
 
 ## 👤 Developers
