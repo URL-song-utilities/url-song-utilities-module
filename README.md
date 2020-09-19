@@ -8,7 +8,7 @@ A module to get information about music titles and even be able to download them
 npm i url-song-utilities
 ```
 
-## ✨ Utilisation
+## ✨ Usage
 
 Available methods :
 
@@ -99,7 +99,7 @@ await player.toPlayableLink('https://youtu.be/ZMqhjKRUGsY').then(url => {
 })
 ```
 
-- Result of a search (example : TROLLZ - 6ix9ine with Nicki Minaj)
+- Result:
 
 ```
 {
@@ -153,8 +153,7 @@ await player.searchSong('https://open.spotify.com/track/22LAwLoDA5b4AaGSkg6bKW')
 
 - Changing the url of a YouTube video (example : EJS)
 
-Why use the toPlayableLink() function ?
-This function transforms a YouTube link into a Google Drive link, which can be read in sites such as (HTML, EJS...).
+`toPlayableLink()` function transforms a YouTube link into a Google Drive link, which can be read in sites such as (HTML, EJS...).
 Without using this function it will be impossible to play the requested video directly with the YouTube link.
 
 ```html
