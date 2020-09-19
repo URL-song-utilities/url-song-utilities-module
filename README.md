@@ -91,8 +91,8 @@ await player.download('https://youtu.be/nceqQyqIa5o').then(stream => {
 
 ```js
 //The bot will try to transform the music
-player.toPlayableLink('https://youtu.be/ZMqhjKRUGsY').then(url => {
-    //If the module returns "undefined", it means that the module did not find the music
+await player.toPlayableLink('https://youtu.be/ZMqhjKRUGsY').then(url => {
+    //If the module returns 'undefined', it means that the module did not find the music
     if (!url) return console.log('No music found !');
     //If the module succeeded in generating a link
     console.log(url);
